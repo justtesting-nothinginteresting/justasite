@@ -22,6 +22,7 @@ body {
 }
 .exercise-picture {
     width: 320px;
+	max-width: 100%
 }
 .exercise-calories {
 	background: #fff;
@@ -29,7 +30,6 @@ body {
     border: 3px solid #ffaaaa;
 }
 .exercise {
-  display: flex;
   justify-content: space-between;
 }
 .vykhod {
@@ -51,3 +51,13 @@ body {
 .exercise-shrunk {
 	width: max-content;
 }
+
+@media only screen and (min-width: 600px) {
+	.exercise {
+		display:flex;
+	}
+	body {
+		background-color: #4a412a
+	}
+}
+
