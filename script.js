@@ -8,7 +8,12 @@ last_exercise.style.color = "brown"
 let knopochka;
 knopochka = document.querySelector('#knopka');
 knopochka.addEventListener('click', function() {
-document.querySelector(".result").textContent = document.querySelector('#lunge').value*12+document.querySelector('#pushup').value*1+document.querySelector('#situp').value*0.43+document.querySelector('#jumping').value*0.13;
+let lunges = +document.querySelector('#lunge').value
+let pushups = +document.querySelector('#pushup').value
+let situps = +document.querySelector('#situp').value
+let jumps = +document.querySelector('#jumping').value
+document.querySelector(".result").textContent = lunges*12+pushups*1+situps*0.43+jumps*0.13;
+document.querySelector(".rezultat").textContent = lunges+pushups+situps+jumps;
 })
 let toggles;
 toggles = document.querySelectorAll(".exercise-toggle");
@@ -23,9 +28,3 @@ for (var index = 0; index < toggles.length; index++) {
 		element.classList.toggle('exercise-shrunk'); 
 	});
 }	
-
-let repeater;
-repeater = document.querySelector('#abab')
-repeater.addEventListener('click', function() {
-document.querySelector(".rezultat").textContent = document.querySelector('#repeat1').value*1+document.querySelector('#repeat2').value*1+document.querySelector('#repeat3').value*1+document.querySelector('#repeat4').value*1;	
-})
