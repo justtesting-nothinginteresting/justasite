@@ -1,0 +1,16 @@
+body {
+	background-image: url(https://pa1.narvii.com/7518/98cb4ea93e5f4c6b956e94c04e349b4d409b6992r1-493-384_hq.gif);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.login-style {
+	border: 5px solid blue;
+    padding: 10px;
+	width: 200px;
+	padding: 15px;
+	box-sizing: border-box;
+	background: rgba(0, 170, 238, 0.3);
+	margin: 0 auto;
+}
